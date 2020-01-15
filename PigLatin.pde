@@ -6,9 +6,7 @@ public void setup()
 	System.out.println("there are " + lines.length + " lines");
 	for (int i = 0 ; i < lines.length; i++) 
 	{
-		System.out.println(lines[i]);
 	  	System.out.println(pigLatin(lines[i]));
-		System.out.println("RAN");
 	}
 }
 public void draw()
@@ -37,7 +35,7 @@ public String moveQu(String sWord) {
 }
 
 public String moveConsonants(String sWord) {
-	while(true) {
+	for(int i = 0; i < sWord.length(); i++) {
 		boolean consanant = true;
 		for(char c : vowels) {
 			if(sWord.charAt(0) == c) {
