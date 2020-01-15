@@ -6,9 +6,10 @@ public void setup()
 	System.out.println("there are " + lines.length + " lines");
 	for (int i = 0 ; i < lines.length; i++) 
 	{
-	  System.out.println(pigLatin(lines[i]));
+		System.out.println(lines[i]);
+	  	System.out.println(pigLatin(lines[i]));
+		System.out.println("RAN");
 	}
-	System.out.println(pigLatin("try"));
 }
 public void draw()
 {
